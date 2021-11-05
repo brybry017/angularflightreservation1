@@ -1,0 +1,14 @@
+<h1>Review Details</h1>
+<h2>Flight Details:</h2>
+<h3>Airlines: {{data?.flight?.operatingAirlines}}</h3>
+<h3>From: {{data?.flight?.departureCity}}</h3>
+<h3>To: {{data?.flight?.arrivalCity}}</h3>
+<h3>Date of Departure: {{data?.flight?.dateOfDeparture}}</h3>
+<h3>Departure Time: {{data?.flight?.estimatedDepartureTime}}</h3>
+<h2>Passenger Details</h2>
+<h3>First Name: {{data?.passenger?.firstName}}</h3>
+<h3>Last Name: {{data?.passenger?.lastName}}</h3>
+<h3>Email: {{data?.passenger?.email}}</h3>
+<h3>Phone: {{data?.passenger?.phone}}</h3>
+<h1>Enter NumberofBags: <input type="number" #numberofbags/><br/></h1>
+<button (click)='checkIn(numberofbags)'>Confirm</button>
